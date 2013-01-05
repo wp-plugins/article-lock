@@ -1,7 +1,7 @@
 === Article Lock ===
 Contributors: ZeroCool51
 Donate link: http://gum.co/article-lock
-Tags: article lock, post lock, post draft, lock post, publish post, post preview, article preview
+Tags: article lock, post lock, post draft, lock post, publish post, post preview, article preview, post date lock, article date lock, content date lock
 Requires at least: 3.0
 Tested up to: 3.5
 Stable tag: 1.0
