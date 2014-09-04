@@ -302,10 +302,20 @@
 				$truncated_article = truncate($content, $article_lock_data['length'], "...", true, true);
 				
 				if($options['position'] == "top") {
-					return $article.$truncated_article;
+					if(current_user_can('manage_options')) {
+						return $article.$truncated_article."<div align=\"center\" style=\"border-bottom: 1px solid #000; border-top: 1px solid #000;\"><p><strong>WHOLE ARTICLE</strong></p></div>".$content;
+					}
+					else {
+						return $article.$truncated_article;
+					}
 				}
 				else {
-					return $truncated_article.$article;
+					if(current_user_can('manage_options')) {
+						return $truncated_article.$article."<div align=\"center\" style=\"border-bottom: 1px solid #000; border-top: 1px solid #000;\"><p><strong>WHOLE ARTICLE</strong></p></div>".$content;
+					}
+					else {
+						return $truncated_article.$article;
+					}
 				}
 				
 			}			
@@ -317,7 +327,8 @@
 	}
 	
 	function article_lock_metabox_add() {
-		add_meta_box('article-lock', 'Article Lock', 'article_lock_do', 'post', 'side', 'high' );
+		add_meta_box('article-lock', 'Article Lock', 'article_lock_do', 'post', 'normal', 'high');
+		add_meta_box('article-lock', 'Article Lock', 'article_lock_do', 'page', 'normal', 'high');
 	}
 
 	function article_lock_do($post) {
