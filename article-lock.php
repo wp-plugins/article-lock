@@ -2,9 +2,9 @@
 
 	/* 
 		Plugin Name: Article Lock
-		Plugin URI: http://wpplugz.is-leet.com
+		Plugin URI: http://bostjan.gets-it.net
 		Description: A simple plugin that locks a public post, shows only its preview and unlocks the entire content on the desired date.
-		Version: 1.0
+		Version: 1.1
 		Author: Bostjan Cigan
 		Author URI: http://bostjan.gets-it.net
 		License: GPL v2
@@ -21,7 +21,7 @@
 	function article_lock_install() {
 		$options = array(
 			'preview_size' => 3000,
-			'version' => '1.0',
+			'version' => '1.2',
 			'position' => 'top',
 			'enabled' => true,
 			'show_code_count' => true,
@@ -119,8 +119,8 @@
 					<tr>
 						<th scope="row"><img src="<?php echo plugin_dir_url(__FILE__).'lock.png'; ?>" height="96px" width="96px" /></th>
 						<td>
-							<p>Thank you for using this plugin. If you like the plugin, you can <a href="http://gum.co/article-lock">buy me a cup of coffee</a><script type="text/javascript" src="https://gumroad.com/js/gumroad-button.js"></script><script type="text/javascript" src="https://gumroad.com/js/gumroad.js"></script> :)</p> 
-							<p>Visit the official website @ <a href="http://wpplugz.is-leet.com">wpPlugz</a>.</p>
+							<p>Thank you for using this plugin. If you like the plugin, you can <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SKMW3BAC8KE52">buy me a cup of coffee</a> :)</p> 
+							<p>Visit the official website @ <a href="http://bostjan.gets-it.net/plugins/article-lock">wpPlugz</a>.</p>
                         </td>
 					</tr>		
 					<tr>
