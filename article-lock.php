@@ -2,7 +2,7 @@
 
 	/* 
 		Plugin Name: Article Lock
-		Plugin URI: http://bostjan.gets-it.net
+		Plugin URI: http://bostjan.gets-it.net/plugins
 		Description: A simple plugin that locks a public post, shows only its preview and unlocks the entire content on the desired date.
 		Version: 1.1
 		Author: Bostjan Cigan
